@@ -4,8 +4,10 @@ public class Main {
 
         System.out.println(LogLevels.logLevel(warningsArray[0]));
         System.out.println(LogLevels.message(warningsArray[0]));
+        System.out.println(LogLevels.reformat(warningsArray[0]));
         System.out.println();
         System.out.println(LogLevels.logLevel(warningsArray[1]));
         System.out.println(LogLevels.message(warningsArray[1]));
+        System.out.println(LogLevels.reformat(warningsArray[1]));
     }
 }
