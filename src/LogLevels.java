@@ -19,4 +19,17 @@ public class LogLevels {
         }
         return stringBuilder.toString();
     }
+    public static String logLevel(String logLine) {
+        StringBuilder stringBuilder = new StringBuilder();
+        String[] separatedWords = logLine.split(" ");
+        char[] charArray = separatedWords[0].toCharArray();
+        StringBuilder stringBuilder1 = new StringBuilder();
+        for (int j = 0; j < charArray.length; j++) {
+            if(charArray[j]!='['&&charArray[j]!=']'){
+                stringBuilder1.append(charArray[j]);
+            }
+        }
+        stringBuilder.append(stringBuilder1);
+        return stringBuilder.toString().toLowerCase();
+    }
 }
